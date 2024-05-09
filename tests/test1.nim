@@ -28,6 +28,10 @@ test "k-nth quickselect 5 numbers":
   var x = @[1, 2, 3, 4, 5]
   check knth.knth_n_quickselect[int](x, (x.len/2).toInt) == 3
 
+test "k-nth quickselect in many numbers":
+  var x = @[8, 7, 1, 2, 4, 5, 3, 9, 11, -200, 12]
+  check knth.knth_n_quickselect[int](x, 1) == -200
+  check knth.knth_n_quickselect[int](x, 2) == 1
 
 test "k-nth nk simple case":
   var x = @[0]
@@ -49,7 +53,7 @@ test "k-nth nk 5 numbers":
   var x = @[1, 2, 3, 4, 5]
   check knth.knth_nk[int](x, (x.len/2).toInt) == 3
 
-test "k-nth nk 5 many numbers":
+test "k-nth nk in many numbers":
   var x = @[8, 7, 1, 2, 4, 5, 3, 9, 11, -200, 12]
   check knth.knth_nk[int](x, 1) == -200
   check knth.knth_nk[int](x, 2) == 1
