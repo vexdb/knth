@@ -10,7 +10,7 @@ If you are looking for some academic material on this problem I would recommend 
 
 You will find: 
 
- * (Quickselect with random pivot)[https://en.wikipedia.org/wiki/Quickselect] implementation which is O(n) on average
+ * [Quickselect with random pivot](https://en.wikipedia.org/wiki/Quickselect) implementation which is O(n) on average
 
 ## API
 
