@@ -15,7 +15,7 @@ test "k-nth quickselect simple case":
 test "k-nth quickselect assert exception when k == length":
   var x = @[0]
 
-  expect (IndexError):
+  expect (ValueError):
     var r = knth.knth_n_quickselect[int](x, 2)
 
 test "k-nth quickselect simple case - 2 elements":
@@ -36,7 +36,7 @@ test "k-nth nk simple case":
 test "k-nth nk assert exception when k == length":
   var x = @[0]
 
-  expect (IndexError):
+  expect (ValueError):
     var r = knth.knth_nk[int](x, 2)
 
 test "k-nth nk simple case - 2 elements":
