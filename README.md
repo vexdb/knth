@@ -6,6 +6,12 @@ If you are looking for some academic material on this problem I would recommend 
 
 * [Algorithm Design and Analysis](https://www.cs.cmu.edu/~15451-s24/notes.pdf)
 
+## Implementations
+
+You will find: 
+
+ * (Quickselect with random pivot)[https://en.wikipedia.org/wiki/Quickselect] implementation which is O(n) on average
+
 ## API
 
 Simply pass an `openArray` compatible object and the `k` value to this package functions:
