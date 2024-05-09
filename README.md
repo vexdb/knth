@@ -8,6 +8,8 @@ If you are looking for some academic material on this problem I would recommend 
 
 ## Implementations
 
+Some of our implementations will change the input array. Ideally you clone your array before calling if this is a problem.
+
 You will find: 
 
  * [Quickselect with random pivot](https://en.wikipedia.org/wiki/Quickselect) implementation which is O(n) on average
