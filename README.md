@@ -12,7 +12,8 @@ Some of our implementations will change the input array. Ideally you clone your 
 
 You will find: 
 
- * [Quickselect with random pivot](https://en.wikipedia.org/wiki/Quickselect) implementation which is O(n) on average
+ * [Quickselect with random pivot](https://en.wikipedia.org/wiki/Quickselect) implementation which is $O(n)$ on average but $O(n^2)$ on worst-case
+ * [Quickselect with median of median pivot](https://nh2.me/recent/Quickselect-with-median-of-medians.pdf) which is both on average and worst case $O(n)$
 
 ## API
 
@@ -22,4 +23,10 @@ Simply pass an `openArray` compatible object and the `k` value to this package f
 var x = @[8, 7, 1, 2, 4, 5, 3, 9, 11, -200, 12]
 check knth.knth_n_quickselect[int](x, 1) == -200
 check knth.knth_n_quickselect[int](x, 2) == 1
+check knth.knth_n_quickselect[int](x, 3) == 2
+
+var x = @[8, 7, 1, 2, 4, 0, 3, 9, 11, -200, 12]
+check knth.knth_quickselect_mom[int](x, 1) == -200
+check knth.knth_quickselect_mom[int](x, 2) == 0
+check knth.knth_quickselect_mom[int](x, 3) == 1
 ```
