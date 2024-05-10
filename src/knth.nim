@@ -9,7 +9,7 @@ proc knth_n_quickselect*[T](a: var openArray[T], k: int): T =
     raise newException(ValueError, &"k {k} is out of bounds")
 
   randomize()
-  return iknth_n_quickselect(a, a.len, k - 1)
+  return iknth_n_quickselect(a, k - 1)
 
 proc knth_nk*[T](a: var openArray[T], k: int): T =
   if k > a.len:
